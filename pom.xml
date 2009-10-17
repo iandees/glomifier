@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yellowbkpk.geo</groupId>
+  <artifactId>glomifier</artifactId>
+  <name>Glomifier</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <description>A simple tool to read in OSM file(s) and connect ways that share a given attribute value.</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.yellowbkpk.geo</groupId>
+      <artifactId>osm-api</artifactId>
+      <version>0.1-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+</project>
