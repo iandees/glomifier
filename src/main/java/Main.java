@@ -13,6 +13,7 @@ import org.apache.commons.cli.ParseException;
 
 import osm.OSMFile;
 import osm.output.OSMChangeOutputter;
+import osm.output.OSMOldOutputter;
 import osm.output.OSMOutputter;
 
 public class Main {
@@ -63,7 +64,7 @@ public class Main {
             Glommer g = new Glommer(aggregate, keyToGlomOn);
             OSMFile out = g.glom();
             
-            OSMOutputter outputter = new OSMChangeOutputter(new File("."), "glommed");
+            OSMOutputter outputter = new OSMOldOutputter(new File("."), "glommed");
             outputter.write(out);
         } catch (ParseException e) {
             e.printStackTrace();
