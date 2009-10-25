@@ -61,8 +61,8 @@ public class Main {
             
             OSMFile aggregate = OSMFile.fromFiles(files);
             
-            Glommer g = new Glommer(aggregate, keyToGlomOn);
-            OSMFile out = g.glom();
+            Glommer g = new Glommer(keyToGlomOn);
+            OSMFile out = g.glom(aggregate);
             
             OSMOutputter outputter = new OSMOldOutputter(new File("."), "glommed");
             outputter.write(out);

@@ -12,15 +12,13 @@ import osm.primitive.way.Way;
 
 public class Glommer {
     
-    private final OSMFile data;
     private final String key;
 
-    public Glommer(OSMFile aggregate, String keyToGlomOn) {
-        data = aggregate;
+    public Glommer(String keyToGlomOn) {
         key = keyToGlomOn;
     }
 
-    public OSMFile glom() {
+    public OSMFile glom(OSMFile data) {
         Map<LatLon, List<Node>> locToNodes = new HashMap<LatLon, List<Node>>();
         Map<Node, List<Way>> nodeToWays = new HashMap<Node, List<Way>>();
         Map<Way, String> wayToTagValue = new HashMap<Way, String>();
