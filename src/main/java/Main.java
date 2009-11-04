@@ -64,7 +64,7 @@ public class Main {
             Glommer g = new Glommer(keyToGlomOn);
             OSMFile out = g.glom(aggregate);
             
-            OSMOutputter outputter = new OSMOldOutputter(new File("."), "glommed");
+            OSMOutputter outputter = new OSMOldOutputter(new File("."), "glommed", "glomifier 0.1");
             outputter.write(out);
         } catch (ParseException e) {
             e.printStackTrace();
