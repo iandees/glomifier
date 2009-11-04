@@ -18,6 +18,7 @@ public class GlommingFilter implements OutputFilter {
      * @return 
      */
     public OSMFile apply(OSMFile out) {
+        System.out.println("Glomming " + out.getWayCount() + " ways.");
         return glommer.glom(out);
     }
 
