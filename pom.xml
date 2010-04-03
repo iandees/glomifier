@@ -3,7 +3,7 @@
   <groupId>com.yellowbkpk.geo</groupId>
   <artifactId>glomifier</artifactId>
   <name>Glomifier</name>
-  <version>0.2-SNAPSHOT</version>
+  <version>0.2</version>
   <description>A simple tool to read in OSM file(s) and connect ways that share a given attribute value.</description>
   
   <build>
@@ -20,7 +20,7 @@
   </build>
 
   <scm>
-    <developerConnection>scm:svn:http://svn.yellowbkpk.com/geo/trunk/glomifier</developerConnection>
+    <developerConnection>scm:svn:http://svn.yellowbkpk.com/geo/tags/glomifier-0.2</developerConnection>
   </scm>
 
   <distributionManagement>
